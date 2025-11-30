@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aircraft Maintenance Assistant</title>
+  <link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-hero">
+      <div class="hero-content">
+        <p class="eyebrow">Maintenance Intelligence</p>
+        <h1>Aircraft Maintenance Assistant</h1>
+        <p class="hero-subtitle">
+          Powered by Groq and curated manuals—get concise, read-only steps with cited sources.
+        </p>
+        <div class="hero-tags">
+          <span>Read-only guidance</span>
+          <span>RAG retrieval</span>
+          <span>Groq chat</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="app-shell">
+      <div class="chat-panel">
+        <header class="chat-header">
+          <h2>Ask anything maintenance.</h2>
+          <p>Responses are structured, safety-conscious, and cite sources from your dataset.</p>
+        </header>
+        <div id="chat-window" class="messages" aria-live="polite"></div>
+        <form id="chat-form" class="input-bar">
+          <input
+            id="message"
+            type="text"
+            placeholder="Ask a question..."
+            autocomplete="off"
+            required
+          />
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="/assets/app.js"></script>
+</body>
+</html>
